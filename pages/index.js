@@ -9,7 +9,6 @@ import LargCard from '../components/LargCard';
 import Footer from './../components/Footer';
 
 export default function Home({exploreData,cardsData}) {
-  console.log(cardsData)
   return (
     <div >
       <Head>
