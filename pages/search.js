@@ -1,4 +1,3 @@
-import { format } from "date-fns";
 import { useRouter } from "next/router";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
@@ -16,16 +15,10 @@ const Search = ({searchReuslts}) => {
     const unformattedStartDate = new Date(startDate)
     const unformattedEndDate = new Date(endDate)
     const formattedStartDate=`${unformattedStartDate.getDate()}-${monthNames[unformattedStartDate.getMonth()]}-${unformattedStartDate.getFullYear()}`
-    const formattedEndDate=`${unformattedEndDate.getDate()}-${monthNames[unformattedEndDate.getMonth()]}-${unformattedEndDate.getFullYear()}`
-    
-    // console.log( datatata.getFullYear())
-    // Date(startDate).getDate()
-    // const formattedStartDate=format( new Date(startDate),"dd MMMM yy");
-    // const formattedEndDate=format( new Date(endDate),"dd MMMM yy");
+    const formattedEndDate=`${unformattedEndDate.getDate()}-${monthNames[unformattedEndDate.getMonth()]}-${unformattedEndDate.getFullYear()}`    
     const range=`${formattedStartDate} - ${formattedEndDate}`
-    // console.log(range)
 
-    // console.log(searchReuslts)
+    
     return (
         <div>
             <Header placeholder={`${location} | ${range} | ${numberOfGuests}`}/>
@@ -46,8 +39,6 @@ const Search = ({searchReuslts}) => {
                             key={img}
                             img={img}
                             location={location}
-                            lat={lat}
-                            long={long}
                             price={price}
                             star={star}
                             title={title}

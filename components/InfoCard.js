@@ -2,7 +2,7 @@ import  Image  from 'next/image';
 import { HeartIcon } from '@heroicons/react/outline';
 import { StarIcon } from "@heroicons/react/solid";
 
-const InfoCard = ({description,img,location,lat,long,price,star,title,total}) => {
+const InfoCard = ({description,img,location,price,star,title,total}) => {
     return (
         <div className=' flex py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-lg 
         rounded-xl transition duration-200 ease-out first:border-t'>
