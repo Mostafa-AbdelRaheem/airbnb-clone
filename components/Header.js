@@ -72,7 +72,7 @@ const Header = ({placeholder}) => {
         </div>
         {/* Claneder section */}
         {searchInput && (
-            <div className="flex flex-col col-span-3 mx-auto">
+            <div className="flex flex-col w-[400px] md:w-[560px] col-span-3 mx-auto">
                 <DateRangePicker
                 ranges={[selectionRange]}
                 minDate={new Date()}
